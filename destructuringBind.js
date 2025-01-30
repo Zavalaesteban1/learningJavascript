@@ -49,3 +49,20 @@ let better_colers = [...colors, 'green', 'purple'];
 console.log(better_colers);
 let special_computer = {...computer, ram: '64GB', nic: '100GB'};
 console.log(special_computer);
+
+// decstrtimg bind
+// this is sugar
+// first gets the first value and rest gets ann the other value[2, 3, 4, 5]
+let [first, ...rest] = [1,2,3,4,5];
+console.log(rest);
+
+
+// getting a fucntin that returns many animals but wwe're going to do by using the spread
+function test(weedStrain1, weedStrain2, ...strains)
+{
+    console.log(weedStrain1);
+    console.log(weedStrain2);
+    console.log(strains);
+}
+
+test('zDeath', 'pinkPanther', 'OG BIGGIE', 'appleKush', 'darkRust', 'purpleGem');
